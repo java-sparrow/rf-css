@@ -1,0 +1,17 @@
+/**
+ * @file 布局相关
+ * @author treelite(c.xinle@gmail.com)
+ */
+
+.clearfix {
+    *zoom: 1;
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+        line-height: 0;
+    }
+    &:after {
+        clear: both;
+    }
+}
