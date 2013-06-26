@@ -142,6 +142,12 @@ body {
   line-height: 1.5;
   font-family: Tahoma, verdana, arial;
 }
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 10px;
+}
 h1 {
   font-size: 18px;
 }
@@ -166,4 +172,74 @@ h3 {
 }
 .clearfix:after {
   clear: both;
+}
+.display-inline-block {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.box-1 {
+  background: #E1EEF7;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  padding: 10px;
+}
+/**
+ * @file 表单相关
+ * @author treelite(c.xinle@gmail.com)
+ */
+.form .group {
+  margin-bottom: 10px;
+  *zoom: 1;
+}
+.form .group:before,
+.form .group:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.form .group:after {
+  clear: both;
+}
+.form .group label {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: top;
+  width: 60px;
+}
+.form .group label span {
+  vertical-align: top;
+}
+.form .group .ui-input,
+.form .group .ui-textarea {
+  width: 220px;
+}
+.form .group .ui-select {
+  width: 140px;
+}
+/**
+ * @file 布局相关
+ * @author treelite(c.xinle@gmail.com)
+ */
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-red {
+  color: #ff0000;
+}
+.text-red {
+  color: #ff0000;
+}
+.text-green {
+  color: #46a546;
 }
