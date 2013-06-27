@@ -187,6 +187,14 @@ h3 {
   border-radius: 3px;
   padding: 10px;
 }
+.footer {
+  padding: 10px 0;
+  text-align: center;
+  color: #CCC;
+}
+.footer a {
+  color: #CCC;
+}
 /**
  * @file 表单相关
  * @author treelite(c.xinle@gmail.com)
