@@ -1,0 +1,12 @@
+{
+    "name": "rf-css",
+    "version": "0.1.0",
+    "description": "Rigel CSS Framework",
+    "contributors": [
+        {
+            "name": "treelite",
+            "email": "c.xinle@gmail.com"
+        }
+    ],
+    "main": "dis/rf.css"
+}
