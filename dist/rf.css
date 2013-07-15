@@ -6,6 +6,11 @@
  * @file 常量定义
  * @auth treelite(c.xinle@gmail.com)
  */
+/*
+@green: #46A546;
+@red: #F00;
+
+*/
 /**
  * @file 通用函数
  * @auth treelite(c.xinle@gmail.com)
@@ -142,6 +147,17 @@ body {
   line-height: 1.5;
   font-family: Tahoma, verdana, arial;
 }
+/*bold something*/
+.lead {
+  margin-bottom: 1.5;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 2.25;
+}
+.strong,
+.bold {
+  font-weight: bold;
+}
 h1,
 h2,
 h3,
@@ -243,11 +259,130 @@ h3 {
   text-align: right;
 }
 .text-red {
-  color: #ff0000;
+  color: #9d261d;
 }
 .text-red {
-  color: #ff0000;
+  color: #9d261d;
 }
 .text-green {
   color: #46a546;
+}
+/**
+ * @file 常用的一些class
+ * @author coocon(coocon2007@gmail.com)
+ */
+.muted {
+  color: #999999;
+}
+a.muted:hover,
+a.muted:focus {
+  color: #808080;
+}
+.text-warning {
+  color: #c09853;
+}
+a.text-warning:hover,
+a.text-warning:focus {
+  color: #a47e3c;
+}
+.text-error {
+  color: #b94a48;
+}
+a.text-error:hover,
+a.text-error:focus {
+  color: #953b39;
+}
+.text-info {
+  color: #3a87ad;
+}
+a.text-info:hover,
+a.text-info:focus {
+  color: #2d6987;
+}
+.text-success {
+  color: #468847;
+}
+a.text-success:hover,
+a.text-success:focus {
+  color: #356635;
+}
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.invisible {
+  visibility: hidden;
+}
+/*关于间距*/
+.padding-10 {
+  padding: 10px;
+}
+.padding-right-5 {
+  padding-right: 5px;
+}
+.padding-right-10 {
+  padding-right: 10px;
+}
+.padding-right-20 {
+  padding-right: 20px;
+}
+.padding-right-50 {
+  padding-right: 50px;
+}
+.padding-left-5 {
+  padding-left: 5px;
+}
+.padding-left-10 {
+  padding-left: 10px;
+}
+.padding-left-20 {
+  padding-left: 20px;
+}
+.padding-left-50 {
+  padding-right: 50px;
+}
+/*margin values*/
+.margin-10 {
+  margin: 10px;
+}
+.margin-right-5 {
+  margin-right: 5px;
+}
+.margin-right-10 {
+  margin-right: 10px;
+}
+.margin-right-20 {
+  margin-right: 20px;
+}
+.margin-right-50 {
+  margin-right: 50px;
+}
+.margin-left-5 {
+  margin-left: 5px;
+}
+.margin-left-10 {
+  margin-left: 10px;
+}
+.margin-left-20 {
+  margin-left: 20px;
+}
+.margin-left-50 {
+  margin-right: 50px;
 }
