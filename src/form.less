@@ -2,20 +2,39 @@
  * @file 表单相关
  * @author treelite(c.xinle@gmail.com)
  */
-
+.form .groups {
+    margin-bottom: 10px;
+}
 .form .group {
     margin-bottom: 10px;
-    .clearfix;
+    margin-right: 10px;
+    .display-inline-block;
 }
-
-.form .group label {
+/*group的label应该是需要基本70 然后开发另外两种大小*/
+.form .group .label {
     .display-inline-block;
     vertical-align: top;
-    width: 60px;
+    width: 70px;
+}
+.form .group .label-2 {
+    .display-inline-block;
+    vertical-align: top;
+    width: 90px;
+}
+.form .group .label-3 {
+    .display-inline-block;
+    vertical-align: top;
+    width: 110px;
 }
 
-.form .group label span {
-    vertical-align: top;
+.form .group .control {
+    width: 200px;
+}
+.form .group .control-2 {
+    width: 220px;
+}
+.form .group .control-3 {
+    width: 250px;
 }
 
 .form .group .ui-input,

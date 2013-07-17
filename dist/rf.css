@@ -492,7 +492,6 @@ h3 {
   position: relative;
   line-height: 29px;
   border: 1px solid rgba(0, 0, 0, 0);
-  background: url(img/arrow_icons.png) right -109px no-repeat;
 }
 .layout-common-header .drop-down-menu-list {
   background-color: #FFF;
@@ -562,10 +561,8 @@ h3 {
   display: block;
   width: 12px;
   height: 11px;
-  background-image: url(img/arrow_icons.png);
-  background-position: 0 -54px;
 }
-.shrink-icon {
+.layout-common-sidebar .shrink-icon {
   border: solid 1px transparent;
   height: 23px;
   width: 27px;
@@ -573,23 +570,23 @@ h3 {
   right: 6px;
   top: 8px;
 }
-.shrink-icon:hover {
+.layout-common-sidebar .shrink-icon:hover {
   border: solid 1px #ddd;
   background-color: #fefefe;
   border-radius: 3px;
 }
-.shrink-icon:active {
+.layout-common-sidebar .shrink-icon:active {
   border: solid 1px #999;
   background-color: #eeeeee;
 }
-.shrink-icon .node-icon {
+.layout-common-sidebar .shrink-icon .node-icon {
   width: 12px;
   height: 11px;
   background-position: 0 -44px;
   top: 6px;
   left: 6px;
 }
-.node-home {
+.layout-common-sidebar .node-home {
   height: 41px;
   background-color: #eaeaea;
   color: #000;
@@ -602,14 +599,14 @@ h3 {
   cursor: pointer;
   position: relative;
 }
-.common-node {
+.layout-common-sidebar .common-node {
   font-style: normal;
   text-align: left;
   cursor: pointer;
   position: relative;
   *zoom: 1;
 }
-.node-1 {
+.layout-common-sidebar .node-1 {
   height: 41px;
   background-color: #eff2f8;
   color: #000;
@@ -619,7 +616,7 @@ h3 {
   border-bottom: solid 1px #ccc;
   padding-left: 28px;
 }
-.node-2 {
+.layout-common-sidebar .node-2 {
   height: 32px;
   background-color: #faf9f9;
   color: #000;
@@ -629,7 +626,7 @@ h3 {
   padding-left: 38px;
   border-bottom: 0;
 }
-.node-3 {
+.layout-common-sidebar .node-3 {
   height: 32px;
   background-color: #faf9f9;
   color: #000;
@@ -640,25 +637,25 @@ h3 {
   padding-left: 51px;
   border-bottom: 0;
 }
-.node-1-text,
+.layout-common-sidebar .node-1-text,
 .node-2-text,
 .node-2-text {
   font-family: "microsoft yahei";
 }
-.node-1-nowat {
+.layout-common-sidebar .node-1-nowat {
   background-color: #cdd6ec;
 }
-.node-2-nowat {
+.layout-common-sidebar .node-2-nowat {
   font-weight: bold;
 }
-.node-3-nowat {
+.layout-common-sidebar .node-3-nowat {
   background-color: #687a91;
-  color: #ffffff;
+  color: #fff;
 }
-.node-2-con {
-  border-bottom: solid 1px #cccccc;
+.layout-common-sidebar .node-2-con {
+  border-bottom: solid 1px #ccc;
 }
-.node-icon {
+.layout-common-sidebar .node-icon {
   width: 9px;
   height: 9px;
   display: block;
@@ -666,24 +663,25 @@ h3 {
   top: 15px;
   background-image: url(img/work_icons.png);
 }
-.node-1.node-closed > .node-icon {
+.layout-common-sidebar .node-1.node-closed > .node-icon {
   background-position: 0 -9px;
   left: 9px;
 }
-.node-1.node-open > .node-icon {
+.layout-common-sidebar .node-1.node-open > .node-icon {
   background-position: 0 -18px;
   left: 9px;
 }
-.node-2.node-closed > .node-icon {
+.layout-common-sidebar .node-2.node-closed > .node-icon {
   background-position: 0 -27px;
   top: 10px;
   left: 20px;
 }
-.node-2.node-opened > .node-icon {
+.layout-common-sidebar .node-2.node-opened > .node-icon {
   background-position: 0 -36px;
   top: 10px;
   left: 20px;
 }
+/*对于ifram提取*/
 .layout-common-iframe {
   width: 100%;
   height: 100%;
@@ -695,28 +693,46 @@ h3 {
  * @file 表单相关
  * @author treelite(c.xinle@gmail.com)
  */
+.form .groups {
+  margin-bottom: 10px;
+}
 .form .group {
   margin-bottom: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  *display: inline;
   *zoom: 1;
 }
-.form .group:before,
-.form .group:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.form .group:after {
-  clear: both;
-}
-.form .group label {
+/*group的label应该是需要基本70 然后开发另外两种大小*/
+.form .group .label {
   display: inline-block;
   *display: inline;
   *zoom: 1;
   vertical-align: top;
-  width: 60px;
+  width: 70px;
 }
-.form .group label span {
+.form .group .label-2 {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
   vertical-align: top;
+  width: 90px;
+}
+.form .group .label-3 {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: top;
+  width: 110px;
+}
+.form .group .control {
+  width: 200px;
+}
+.form .group .control-2 {
+  width: 220px;
+}
+.form .group .control-3 {
+  width: 250px;
 }
 .form .group .ui-input,
 .form .group .ui-textarea {
@@ -743,6 +759,18 @@ h3 {
 /*notify的loading图标*/
 .ui-rf-notify .icon-loading {
   background: url('img/loading.gif') no-repeat;
+}
+/*layoutc的 common布局中 左侧的展开图标 , 右侧菜单的图标，node图标*/
+.nav-bar-closed .expand-icon,
+.nav-bar-opened .expand-icon {
+  background-image: url(img/arrow_icons.png);
+  background-position: 0 -54px;
+}
+.layout-common-header .drop-down-menu {
+  background: url(img/arrow_icons.png) right -109px no-repeat;
+}
+.layout-common-sidebar .node-icon {
+  background-image: url(img/work_icons.png);
 }
 /**
  * @file 布局相关
