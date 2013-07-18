@@ -1,6 +1,7 @@
 module.exports = function(grunt) {
     grunt.initConfig({
         name: 'rf',
+        pkg: grunt.file.readJSON('package.json'),
         clean : ['dist/*', '<%= name %>.zip'],
         less: {
             release: {
@@ -32,7 +33,7 @@ module.exports = function(grunt) {
                     'dist/**'
                 ],
 
-                dest: '<%= name %>.zip'
+                dest: '<%= pkg.name %>.zip'
             }
         }
     });
