@@ -661,7 +661,6 @@ h3 {
   display: block;
   position: absolute;
   top: 15px;
-  background-image: url(img/work_icons.png);
 }
 .layout-common-sidebar .node-1.node-closed > .node-icon {
   background-position: 0 -9px;
@@ -770,7 +769,7 @@ h3 {
   background: url(img/arrow_icons.png) right -109px no-repeat;
 }
 .layout-common-sidebar .node-icon {
-  background-image: url(img/work_icons.png);
+  background-image: url(img/arrow_icons.png);
 }
 /**
  * @file 布局相关
