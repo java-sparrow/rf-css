@@ -758,6 +758,12 @@ h3 {
 /*notify的loading图标*/
 .ui-rf-notify .icon-loading {
   background: url('img/loading.gif') no-repeat;
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  vertical-align: -4px;
+  _display: inline;
+  _zoom: 1;
 }
 /*layoutc的 common布局中 左侧的展开图标 , 右侧菜单的图标，node图标*/
 .nav-bar-closed .expand-icon,
